@@ -40,7 +40,7 @@
 &kp ESCAPE      &kp N1           &kp N2        &kp N3    &kp N4          &kp N5              &kp N6             &kp N7           &kp N8    &kp N9                &kp N0                 &kp BSPC
 &kp LEFT_SHIFT  &kp EXCLAMATION  &kp AT        &kp HASH  &kp DOLLAR      &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &kp LEFT_ALT    &kp EQUAL        &kp KP_MINUS  &kp PLUS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SEMI  &kp COLON             &trans                 &trans
-                                               &kp LGUI  &trans          &trans              &trans             &trans           &kp RALT
+                                               &kp LGUI  &trans          &trans              &trans             &mo 3            &kp RALT
             >;
         };
 
@@ -56,7 +56,17 @@
 &kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &trans    &trans        &trans       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans         &trans            &trans     &kp BSPC
 &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans        &trans       &kp LEFT          &kp DOWN           &kp UP_ARROW   &kp RIGHT         &kp COLON  &trans
 &kp LSHFT   &bt BT_SEL 4  &trans        &trans    &kp QUESTION  &kp SLASH    &kp MINUS         &kp UNDERSCORE     &kp LESS_THAN  &kp GREATER_THAN  &trans     &trans
-                                        &kp LGUI  &trans        &trans       &trans            &trans             &kp RALT
+                                        &kp LGUI  &mo 3         &trans       &trans            &trans             &kp RALT
+            >;
+        };
+
+        config_layer {
+            display-name = "Config";
+            bindings = <
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &bt BT_SEL 4  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
